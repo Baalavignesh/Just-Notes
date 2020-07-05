@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <div className = "nav-container">
+          <nav className = "nav-data">
+            <h2 id = "heading-left"> Just-Notes </h2>
+            <ul className = "list-items">
+              <li><button className = "top-button"> About Me </button></li>
+              <li><button className = "top-button"> New Page </button></li>
+            </ul>
+          </nav>
+        </div>
+        
+      </main>
+      <section className = 'main-body'>
+        <div className = "text-box">
+          <textarea id="input-tag" rows = "25">
+          </textarea>
+        </div>
+      </section>
+      <footer className = 'footer-part'>
+        This website dosent have a copyright.
+      </footer>
     </div>
   );
 }
